@@ -1,0 +1,6 @@
+# Defaults for this repo. A sandbox overrides a tool by adding its own mise.toml.
+# PHP and assembly are not pinned here. Those projects run entirely in Docker.
+[tools]
+node = "24"
+pnpm = "10"
+rust = "stable"

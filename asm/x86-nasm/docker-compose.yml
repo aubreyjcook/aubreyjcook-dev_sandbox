@@ -1,0 +1,14 @@
+name: sandbox-asm-x86
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/src
+    working_dir: /src
+    networks:
+      - asm
+
+networks:
+  asm:
+    name: sandbox-asm-x86-net

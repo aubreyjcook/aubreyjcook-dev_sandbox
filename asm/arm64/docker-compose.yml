@@ -1,0 +1,14 @@
+name: sandbox-asm-arm64
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/src
+    working_dir: /src
+    networks:
+      - asm
+
+networks:
+  asm:
+    name: sandbox-asm-arm64-net

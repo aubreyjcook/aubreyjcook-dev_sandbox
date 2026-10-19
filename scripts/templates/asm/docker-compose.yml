@@ -1,0 +1,14 @@
+name: sandbox-__NAME__
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/src
+    working_dir: /src
+    networks:
+      - app
+
+networks:
+  app:
+    name: sandbox-__NAME__-net

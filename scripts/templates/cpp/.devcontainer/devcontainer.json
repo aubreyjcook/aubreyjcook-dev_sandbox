@@ -1,0 +1,9 @@
+{
+  "name": "__NAME__",
+  "image": "mcr.microsoft.com/devcontainers/cpp:debian-12",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cmake-tools", "ms-vscode.cpptools"]
+    }
+  }
+}

@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS notes (
+  id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  body TEXT NOT NULL
+) ENGINE=InnoDB;
+
+INSERT INTO notes (body) VALUES ('hello from mysql');

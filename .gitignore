@@ -1,1 +1,39 @@
 **/agent-instructions.md
+
+# dependencies
+node_modules/
+vendor/
+
+# builds
+dist/
+build/
+target/
+.next/
+out/
+.angular/
+out-tsc/
+*.tsbuildinfo
+coverage/
+
+# env and local mise overrides
+.env
+.env.*
+!.env.example
+.mise.local.toml
+
+# cmake in-source leftovers
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+cmake-build-*/
+CTestTestfile.cmake
+Testing/
+
+# assemblers
+*.o
+*.obj
+
+# logs and os
+*.log
+.DS_Store
+Thumbs.db

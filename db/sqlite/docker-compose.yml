@@ -1,0 +1,16 @@
+name: sandbox-sqlite
+
+services:
+  sqlite:
+    build: .
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/work
+    working_dir: /work
+    networks:
+      - sqlite
+
+networks:
+  sqlite:
+    name: sandbox-sqlite-net

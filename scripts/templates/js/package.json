@@ -1,0 +1,11 @@
+{
+  "name": "__NAME__",
+  "private": true,
+  "scripts": {
+    "start": "tsx src/index.ts"
+  },
+  "devDependencies": {
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

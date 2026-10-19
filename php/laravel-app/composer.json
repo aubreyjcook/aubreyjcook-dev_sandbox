@@ -1,0 +1,11 @@
+{
+  "name": "sandbox/laravel-app",
+  "description": "Isolated Laravel sandbox. PHP and Composer run in Docker.",
+  "type": "project",
+  "require": {
+    "php": "^8.3"
+  },
+  "config": {
+    "sort-packages": true
+  }
+}

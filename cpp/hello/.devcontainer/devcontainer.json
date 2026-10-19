@@ -1,0 +1,9 @@
+{
+  "name": "cpp-hello",
+  "image": "mcr.microsoft.com/devcontainers/cpp:debian-12",
+  "customizations": {
+    "vscode": {
+      "extensions": ["ms-vscode.cmake-tools", "ms-vscode.cpptools"]
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Angular keeps its own Node line. The other JS sandboxes pin Node 24.
+[tools]
+node = "22"
+pnpm = "10"

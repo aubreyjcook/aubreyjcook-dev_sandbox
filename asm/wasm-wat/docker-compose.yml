@@ -1,0 +1,14 @@
+name: sandbox-asm-wasm
+
+services:
+  app:
+    build: .
+    volumes:
+      - .:/src
+    working_dir: /src
+    networks:
+      - asm
+
+networks:
+  asm:
+    name: sandbox-asm-wasm-net
