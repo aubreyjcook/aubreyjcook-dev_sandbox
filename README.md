@@ -12,6 +12,8 @@ PORTS.md                      host port registry
 scripts/new-project.ps1       copy a group template into a new folder
 scripts/new-project.sh        same scaffold for bash
 scripts/templates/            starters used by the scaffold
+js/javascript/                Node, JavaScript only
+js/typescript/                Node and the TypeScript compiler
 js/next-app/                  Next.js, port 3000
 js/react-app/                 Vite + React, port 5173
 js/angular-app/               Angular, Node 22, port 4200
@@ -57,11 +59,35 @@ Start Docker Desktop before any `docker compose` command.
 
 ## JavaScript and TypeScript
 
-These projects install dependencies into their own `node_modules`. From the project directory:
+`js/javascript` and `js/typescript` are the language sandboxes. The other folders under `js/` are framework apps. Each one has its own `package.json`. The TypeScript sandbox is the only one of the two with a `tsconfig.json`, and that file does not extend anything above the project.
+
+Framework apps install dependencies into their own `node_modules`. From the project directory:
 
 ```powershell
 pnpm install
 ```
+
+### js/javascript
+
+Node on the JavaScript sources in this folder. There is no TypeScript compiler, no framework, and no dependency install.
+
+```powershell
+pnpm start
+```
+
+That runs `src/index.js`.
+
+### js/typescript
+
+Node plus the TypeScript compiler, installed in this project. There is no framework.
+
+```powershell
+pnpm install
+pnpm build
+pnpm start
+```
+
+`pnpm build` writes JavaScript to `dist`. `pnpm start` runs `dist/index.js`.
 
 ### js/next-app
 

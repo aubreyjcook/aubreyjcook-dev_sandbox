@@ -6,6 +6,8 @@ Laravel and WordPress keep their databases on a private compose network. `db/pos
 
 | Project | Service | Host port |
 | --- | --- | --- |
+| `js/javascript` | Node | none |
+| `js/typescript` | Node | none |
 | `js/next-app` | Next.js | 3000 |
 | `js/nest-api` | Nest | 3001 |
 | `js/graphql-api` | GraphQL | 4000 |
